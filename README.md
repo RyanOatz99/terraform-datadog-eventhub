@@ -1,3 +1,5 @@
+# Datadog enventhub module
+
 ## Requirements
 
 | Name | Version |
@@ -11,6 +13,17 @@
 |------|---------|
 | <a name="provider_datadog"></a> [datadog](#provider\_datadog) | >=2.25.0 |
 
+## Usage
+
+```hcl
+module "datadog_eventhub" {
+  source        = "linkbynet/eventhub/datadog"
+  customer_name = "mycustomer"
+  customer_id   = 1234
+  asset_lbnref  = 1234
+  asset_name    = myeventhub
+}
+```
 ## Modules
 
 No modules.
